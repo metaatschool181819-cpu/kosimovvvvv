@@ -1,36 +1,136 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>MyPortfolio</h2>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">● Apple</div>
 
         <nav>
-            <a href="#">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#store">Store</a>
+            <a href="#mac">Mac</a>
+            <a href="#iphone">iPhone</a>
+            <a href="#ipad">iPad</a>
+            <a href="#watch">Watch</a>
+            <a href="#contact">Support</a>
         </nav>
+
+        <button class="cart" id="cartBtn">🛒 <span id="cartCount">0</span></button>
     </header>
 
-    <section class="hero">
-        <h1>Salom, men <span>Developer</span></h1>
-        <p>Men HTML va CSS o'rganyapman!</p>
-        <a href="#about" class="btn">Learn More</a>
+    <!-- HERO -->
+    <section class="hero" id="store">
+        <p class="small-title">NEW GENERATION</p>
+        <h1>Think different.</h1>
+        <p>Discover the world of Apple.</p>
+
+        <div class="hero-buttons">
+            <a href="#iphone" class="btn">Explore iPhone</a>
+            <a href="#mac" class="link">Learn more →</a>
+        </div>
+
+        <div class="hero-image">
+            <div class="phone">
+                <div class="camera"></div>
+                <div class="screen">
+                    <h2>HELLO.</h2>
+                    <p>Apple Experience</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="about" id="about">
-        <h2>Men haqimda</h2>
-        <p>Men web dasturlashga qiziqaman.
-        Kelajakda kuchli dasturchi bo'lmoqchiman.</p>
+    <!-- IPHONE -->
+    <section class="product iphone" id="iphone">
+        <p class="small-title">IPHONE SERIES</p>
+        <h2>iPhone 17 Pro</h2>
+        <p>Powerful. Beautiful. Pro.</p>
+
+        <div class="actions">
+            <a href="#contact" class="btn">Buy</a>
+            <a href="#contact" class="link">Learn more →</a>
+        </div>
+
+        <div class="product-visual iphone-visual">
+            <div class="mini-phone"></div>
+        </div>
     </section>
 
-    <footer id="contact">
-        <p>© 2026 My Portfolio</p>
+    <!-- MAC -->
+    <section class="product mac" id="mac">
+        <p class="small-title">POWER YOUR DREAMS</p>
+        <h2>MacBook Pro</h2>
+        <p>Built for incredible possibilities.</p>
+
+        <div class="actions">
+            <a href="#contact" class="btn">Buy</a>
+            <a href="#contact" class="link">Learn more →</a>
+        </div>
+
+        <div class="laptop">
+            <div class="laptop-screen">
+                <span></span>
+            </div>
+            <div class="laptop-base"></div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <div class="product-card ipad" id="ipad">
+            <p class="small-title">CREATIVITY</p>
+            <h2>iPad Air</h2>
+            <p>Imagine. Create. Inspire.</p>
+            <a href="#contact">Learn more →</a>
+            <div class="tablet"></div>
+        </div>
+
+        <div class="product-card watch" id="watch">
+            <p class="small-title">HEALTH & FITNESS</p>
+            <h2>Apple Watch</h2>
+            <p>A healthier you.</p>
+            <a href="#contact">Learn more →</a>
+            <div class="watch-icon">⌚</div>
+        </div>
+
+        <div class="product-card airpods">
+            <p class="small-title">MUSIC EVERYWHERE</p>
+            <h2>AirPods Pro</h2>
+            <p>Sound that moves you.</p>
+            <a href="#contact">Learn more →</a>
+            <div class="airpods-icon">♫</div>
+        </div>
+
+        <div class="product-card vision">
+            <p class="small-title">FUTURE IS HERE</p>
+            <h2>Apple Vision</h2>
+            <p>Explore a new dimension.</p>
+            <a href="#contact">Learn more →</a>
+            <div class="vision-icon">◉</div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Welcome to Apple Store.</h2>
+        <p>Discover something amazing.</p>
+        <a href="mailto:example@gmail.com" class="btn">Contact Us</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3> Apple Store</h3>
+        <p>© 2026 Apple Store Design. All rights reserved.</p>
+        <p>Designed for learning purposes.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
